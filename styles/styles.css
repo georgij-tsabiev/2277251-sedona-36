@@ -1,4 +1,5 @@
 /* FONTS */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -39,7 +40,7 @@ body {
 
 .page-container {
   width: 1200px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .reset-list {  /* Для всех списков */
@@ -128,7 +129,7 @@ body {
   content: "";
   right: 16px;
   left: 16px;
-  bottom: 0;
+  bottom: -1px;
   height: 2px;
   background-color: #756257;
 }
@@ -140,7 +141,7 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 272px;
   margin-left: auto;
 }
@@ -148,7 +149,7 @@ body {
 .navigation-link {
   position: relative;
   display: block;
-  padding: 18px 16px;
+  padding: 19px 16px;
   font-weight: 700;
   font-size: 20px;
   color:#000000;
@@ -218,7 +219,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 69px 0px;
+  padding: 69px 0;
   margin-bottom: 20px;
 }
 
@@ -458,7 +459,7 @@ body {
 }
 
 .invitation-to-sedona {
-  padding: 64px 0px;
+  padding: 64px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -620,7 +621,7 @@ body {
   background-color: #f2f2f2;
   width: 428px;
   border: none;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   padding-left: 20px;
 }
 
@@ -636,7 +637,7 @@ body {
   font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   border: none;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   cursor: pointer;
 }
@@ -852,7 +853,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -921,7 +921,6 @@ body {
 
 .tooltip-toggle {
   border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
   display: block;
@@ -955,9 +954,8 @@ body {
   padding-bottom: 18px;
   padding-left: 22px;
   border-radius: 10px;
-  display: block;
   width: 215px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 41px;
   left: 50%;
@@ -1242,5 +1240,3 @@ body {
 .modal-close-button:active {
   background-color: #dcdcdc;
 }
-
-
