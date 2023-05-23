@@ -156,6 +156,11 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-search,
+.navigation-link-favorites {
+  padding: 19px 13px;
+}
+
 .header-button {
   font-weight: 700;
   font-size: 16px;
