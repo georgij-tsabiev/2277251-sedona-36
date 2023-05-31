@@ -39,7 +39,7 @@ body {
 
 .page-container {
   width: 1200px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .reset-list {  /* Для всех списков */
@@ -140,7 +140,7 @@ body {
 .navigation-user {
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 272px;
   margin-left: auto;
 }
@@ -218,7 +218,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 69px 0px;
+  padding: 69px 0;
   margin-bottom: 20px;
 }
 
@@ -458,7 +458,7 @@ body {
 }
 
 .invitation-to-sedona {
-  padding: 64px 0px;
+  padding: 64px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -620,7 +620,7 @@ body {
   background-color: #f2f2f2;
   width: 428px;
   border: none;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   padding-left: 20px;
 }
 
@@ -636,7 +636,7 @@ body {
   font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   border: none;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   cursor: pointer;
 }
@@ -957,7 +957,7 @@ body {
   border-radius: 10px;
   display: block;
   width: 215px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 41px;
   left: 50%;
@@ -1242,5 +1242,3 @@ body {
 .modal-close-button:active {
   background-color: #dcdcdc;
 }
-
-
