@@ -72,7 +72,7 @@
 
     <main class="main-hotels">
       <section class="filter">
-        <h1 class="sedona-hotels-title">Сливочное мороженое</h1>
+        <h1 class="sedona-hotels-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list reset-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -86,7 +86,92 @@
           </li>
         </ul>
 
+        <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Инфраструктура::</legend>
+            <ul class="hotels-filter-list reset-list">
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Бассейн
+                  <input class="input-checkbox" type="checkbox" name="fillers" value="filler-chocolate" checked>
+                  <span class="control-outline control-outline-checkbox"></span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Парковка
+                  <input class="input-checkbox" type="checkbox" name="fillers" value="filler-sugar-sprinkles" checked>
+                  <span class="control-outline control-outline-checkbox"></span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Wi-Fi
+                  <input class="input-checkbox" type="checkbox" name="fillers" value="filler-fruit">
+                  <span class="control-outline control-outline-checkbox"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Тип жилья:</legend>
+            <ul class="hotels-filter-list reset-list">
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Гостиница
+                  <input class="input-radio" type="radio" name="fat-content" value="0%">
+                  <span class="control-outline control-outline-radio"></span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Мотель
+                  <input class="input-radio" type="radio" name="fat-content" value="to 10%" checked>
+                  <span class="control-outline control-outline-radio"></span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  Апартаменты
+                  <input class="input-radio" type="radio" name="fat-content" value="to 30%">
+                  <span class="control-outline control-outline-radio"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+            <div class="range-wrapper">
+              <div class="range-toggle-wrapper min-price">
+                <button class="range-toggle" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <label class="range-label" for="min-price">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </label>
+                <input class="range-toggle-description" type="text" id="min-price" required>
+              </div>
+              <div class="range-toggle-wrapper max-price">
+                <button class="range-toggle" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+                <label class="range-label" for="max-price">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </label>
+                <input class="range-toggle-description" type="text" id="max-price" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="button apply-button" type="submit">
+            Применить
+          </button>
+          <button class="button reset-button" type="submit">
+            Сбросить
+          </button>
+        </form>
       </section>
 
       <section class="newsletter">
