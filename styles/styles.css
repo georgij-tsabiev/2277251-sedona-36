@@ -16,6 +16,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -1244,4 +1250,53 @@ body {
 
 .modal-close-button:active {
   background-color: #dcdcdc;
+}
+
+/* Страница каталога гостиниц */
+
+.filter {
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 35px 70px 70px 70px;
+}
+
+.sedona-hotels-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hotels-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+}
+
+.hotels-filter-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-form {
+  display: flex;
+  gap: 70px;
+}
+
+.hotels-filter-title {
+  margin-bottom: 32px;
 }
