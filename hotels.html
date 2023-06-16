@@ -175,78 +175,94 @@
       </section>
 
       <section class="hotels-catalog">
-        <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
-
-        <select class="hotels-filter-select">
-          <option value="cheap-first">Сначала дешевые</option>
-          <option value="expensive-first">Сначала дорогие</option>
-          <option value="novelties">Новинки</option>
-        </select>
-
-        <button type="button"></button>
-        <button type="button"></button>
-        <button type="button"></button>
-
-        <div class="hotels-wrapper">
-          <ul>
-            <li>
-              <img src="images/amara-resort-spa.jpg" alt="Звёздное небо на фоне каньона.">
-              <a href="#">Amara Resort & Spa</a>
-              <span>Гостиница</span>
-              <span>От 4000 ₽</span>
-              <a href=""></a>
+        <div class="hotels-title-wrapper">
+          <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
+          <select class="hotels-filter-select">
+            <option value="cheap-first">Сначала дешевые</option>
+            <option value="expensive-first">Сначала дорогие</option>
+            <option value="novelties">Новинки</option>
+          </select>
+          <ul class="hotels-filter-buttons-list reset-list">
+            <li class="hotels-filter-buttons-item">
               <button type="button"></button>
             </li>
             <li>
-              <img src="images/villas-at-poco-diablo.jpg" alt="Горы, долина и радуга.">
-              <a href="#">Villas at Poco Diablo</a>
-              <span>Гостиница</span>
-              <span>От 4000 ₽</span>
-              <a href=""></a>
               <button type="button"></button>
             </li>
             <li>
-              <img src="images/desert-quail-inn.jpg" alt="Гора на голубого неба.">
-              <a href="#">Desert Quail Inn</a>
-              <span>Гостиница</span>
-              <span>От 4000 ₽</span>
-              <a href=""></a>
-              <button type="button"></button>
-            </li>
-            <li>
-              <img src="images/green-tree-inn.jpg" alt="Горы на фоне звёздного неба.">
-              <a href="#">GreenTree Inn</a>
-              <span>Гостиница</span>
-              <span>От 4000 ₽</span>
-              <a href=""></a>
               <button type="button"></button>
             </li>
           </ul>
+        </div>
 
-          <ul>
-            <li>
-              <a href="">1</a>
+        <div class="hotels-wrapper">
+          <ul class="hotels-list">
+            <li class="hotels-list-item">
+              <img src="images/amara-resort-spa.jpg" alt="Звёздное небо на фоне каньона.">
+              <a class="hotels-title-link" href="#">Amara Resort & Spa</a>
+              <div class="card-wrapper">
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-min-price">От 4000 ₽</span>
+                <a class="more-link-button" href="#">подробнее</a>
+                <button class="to-favorites-btn" type="button">в избранное</button>
+              </div>
             </li>
-            <li>
-              <a href="">2</a>
+            <li class="hotels-list-item">
+              <img src="images/villas-at-poco-diablo.jpg" alt="Горы, долина и радуга.">
+              <a class="hotels-title-link" href="#">Villas at Poco Diablo</a>
+              <div class="card-wrapper">
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-min-price">От 4000 ₽</span>
+                <a class="more-link-button" href="#">подробнее</a>
+                <button class="to-favorites-btn" type="button">в избранное</button>
+              </div>
             </li>
-            <li>
-              <a href="">3</a>
+            <li class="hotels-list-item">
+              <img src="images/desert-quail-inn.jpg" alt="Гора на голубого неба.">
+              <a class="hotels-title-link" href="#">Desert Quail Inn</a>
+              <div class="card-wrapper">
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-min-price">От 4000 ₽</span>
+                <a class="more-link-button" href="#">подробнее</a>
+                <button class="to-favorites-btn" type="button">в избранное</button>
+              </div>
             </li>
-            <li>
-              <a href="">4</a>
+            <li class="hotels-list-item">
+              <img src="images/green-tree-inn.jpg" alt="Горы на фоне звёздного неба.">
+              <a class="hotels-title-link" href="#">GreenTree Inn</a>
+              <div class="card-wrapper">
+                <span class="housing-type">Гостиница</span>
+                <span class="housing-min-price">От 4000 ₽</span>
+                <a class="more-link-button" href="#">подробнее</a>
+                <button class="to-favorites-btn" type="button">в избранное</button>
+              </div>
             </li>
-            <li>
+          </ul>
+
+          <ul class="pagination-list reset-list">
+            <li class="pagination-list-item">
+              <a class="pagination-item-link pagination-link-current" href="">1</a>
+            </li>
+            <li class="pagination-list-item">
+              <a class="pagination-item-link" href="">2</a>
+            </li>
+            <li class="pagination-list-item">
+              <a class="pagination-item-link" href="">3</a>
+            </li>
+            <li class="pagination-list-item">
+              <a class="pagination-item-link" href="">4</a>
+            </li>
+            <li class="pagination-list-item">
               <span>...</span>
             </li>
-            <li>
-              <a href="">10</a>
+            <li class="pagination-list-item">
+              <a class="pagination-item-link" href="">10</a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="newsletter">
+      <section class="newsletter catalog-newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
