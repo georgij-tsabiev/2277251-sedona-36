@@ -601,6 +601,16 @@ body {
   text-align: center;
 }
 
+.catalog-newsletter {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.catalog-newsletter .newsletter-title,
+.catalog-newsletter .newsletter-text {
+  color: #000000;
+}
+
 .newsletter-form {
   display: flex;
   flex-direction: row;
@@ -1299,4 +1309,162 @@ body {
 
 .hotels-filter-title {
   margin-bottom: 32px;
+}
+
+/* Карточки товаров */
+
+.hotels-wrapper {
+  padding: 0 70px;
+}
+
+.hotels-list {
+  padding: 0;
+  margin: 0 0 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hotels-list-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 19px;
+}
+
+.hotels-title-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.housing-type {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.housing-min-price {
+  text-align: right;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
+
+.more-link-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 26px;
+}
+
+.to-favorites-btn {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.hotels-title-wrapper {
+  display: flex;
+  padding: 57px 70px 47px 70px;
+}
+
+.hotels-filter-select {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  display: flex;
+  align-self: center;
+  margin: 0 0 0 200px;
+  padding: 14px 20px;
+}
+
+.hotels-filter-buttons-list  {
+  margin-left: auto;
+}
+
+.hotels-catalog-title {
+  display: flex;
+  align-self: center;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Пагинация  */
+
+.pagination-list {
+  margin: 0 0 60px 0;
+  gap: 8px;
+}
+
+.pagination-list-item {
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-item-link {
+  max-width: 60px;
+  min-height: 60px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  padding: 0 24px;
+}
+
+.pagination-link-current {
+  background-color: #f2f2f2;
+  color: #000000;
 }
