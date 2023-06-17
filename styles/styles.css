@@ -186,6 +186,8 @@ body {
 }
 
 .button {
+  border: none;
+  cursor: pointer;
   background-color: #756157;
   color:#ffffff;
 }
@@ -1286,8 +1288,40 @@ body {
 }
 
 .breadcrumbs-link {
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.home-page-icon {
+  display: block;
+  width: 13px;
+  height: 15px;
+  background-image: url("../images/home-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 28px;
+  align-self: center;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  top: 3px;
+  right: 8px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px 1px;
 }
 
 .hotels-filter-group {
@@ -1307,8 +1341,63 @@ body {
   gap: 70px;
 }
 
+.control {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
 .hotels-filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
   margin-bottom: 32px;
+}
+
+.range-wrapper {
+  display: flex;
+}
+
+.filter-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: flex-end;
+}
+
+.apply-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px 50px;
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.reset-button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px 58px;
+  background-color: transparent;
 }
 
 /* Карточки товаров */

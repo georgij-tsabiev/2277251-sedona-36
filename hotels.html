@@ -74,7 +74,7 @@
         <h1 class="sedona-hotels-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list reset-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link home-page-icon" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -87,7 +87,7 @@
 
         <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="hotels-filter-group">
-            <legend class="hotels-filter-title">Инфраструктура::</legend>
+            <legend class="hotels-filter-title">Инфраструктура:</legend>
             <ul class="hotels-filter-list reset-list">
               <li class="hotels-filter-item">
                 <label class="control">
@@ -144,32 +144,34 @@
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper">
               <div class="range-toggle-wrapper min-price">
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
                 <label class="range-label" for="min-price">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </label>
-                <input class="range-toggle-description" type="text" id="min-price" required>
+                <input class="range-toggle-description" type="text" value="0" id="min-price" required>
+                <button class="range-toggle" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
               </div>
               <div class="range-toggle-wrapper max-price">
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
                 <label class="range-label" for="max-price">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </label>
-                <input class="range-toggle-description" type="text" id="max-price" required>
+                <input class="range-toggle-description" type="text" value="9000" id="max-price" required>
+                <button class="range-toggle" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </div>
             </div>
           </fieldset>
 
-          <button class="button apply-button" type="submit">
-            Применить
-          </button>
-          <button class="button reset-button" type="submit">
-            Сбросить
-          </button>
+          <div class="filter-buttons-wrapper">
+            <button class="button apply-button" type="submit">
+              Применить
+            </button>
+            <button class="button reset-button" type="submit">
+              Сбросить
+            </button>
+          </div>
         </form>
       </section>
 
