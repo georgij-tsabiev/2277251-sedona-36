@@ -1436,6 +1436,8 @@ body {
 .pagination-list {
   margin: 0 0 60px 0;
   gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-list-item {
