@@ -1270,6 +1270,7 @@ body {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 35px 70px 70px 70px;
 }
 
@@ -1504,10 +1505,12 @@ body {
   padding: 14px 100px 14px 20px;
 }
 
-.hotels-filter-buttons-list  {
+.hotels-filter-view-list  {
   align-self: center;
   gap: 8px;
   margin-left: auto;
+  flex-wrap: wrap;
+  max-width: 160px;
 }
 
 .hotels-catalog-title {
