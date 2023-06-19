@@ -143,24 +143,23 @@
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
             <div class="range-wrapper">
-              <div class="range-toggle-wrapper min-price">
-                <label class="range-label" for="min-price">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </label>
-                <input class="range-toggle-description" type="text" value="0" id="min-price" required>
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-              </div>
-              <div class="range-toggle-wrapper max-price">
-                <label class="range-label" for="max-price">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </label>
-                <input class="range-toggle-description" type="text" value="9000" id="max-price" required>
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
-              </div>
+              <label class="range-label" for="min-price">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </label>
+              <input class="range-toggle-description" type="text" value="0" id="min-price" required>
+              <label class="range-label" for="max-price">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </label>
+              <input class="range-toggle-description" type="text" value="9000" id="max-price" required>
+            </div>
+
+            <div class="range-slider">
+              <button class="range-toggle min-price" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range-toggle max-price" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
             </div>
           </fieldset>
 

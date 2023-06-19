@@ -1360,8 +1360,72 @@ body {
   margin-bottom: 32px;
 }
 
+.range-slider {
+  position: relative;
+}
+
 .range-wrapper {
-  display: flex;
+  width: 293px;
+}
+
+.range-toggle {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle-description {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  max-width: 143px;
+  background: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-toggle-description:first-of-type {
+  margin-right: -5px;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-toggle-description:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-slider::before {
+  content: "";
+  position: absolute;
+  width: 287px;
+  height: 4px;
+  top: 45px;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.range-slider::after {
+  content: "";
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  top: 45px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.min-price {
+  transform: translate(0, 24px);
+}
+
+.max-price {
+  transform: translate(186px, 24px);
 }
 
 .filter-buttons-wrapper {
